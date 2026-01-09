@@ -1,10 +1,9 @@
 const reverseString = function(string) {
-    const stringSize = string.length;
-    let reversedWord = "";
-    for ( let i = stringSize-1; i >= 0; i--){
-        reversedWord += string[i];
-    }
-    return reversedWord;
+    return string
+    .split("")
+    .reverse()
+    .join("");
+
 };
 
 // Do not edit below this line
