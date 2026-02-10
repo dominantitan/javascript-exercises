@@ -15,8 +15,8 @@ const convertToFahrenheit = function(TempInCelsius) {
 };
 
 function round(number,precision){
-    multiplier = Math.pow(10,precision || 0);
-    return Math.round(number * multiplier)/multiplier;
+    multiplier = 10 ** precision;
+    return Math.round(number*multiplier)/multiplier;
 }
 
 // Do not edit below this line

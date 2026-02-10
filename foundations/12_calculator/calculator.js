@@ -7,20 +7,22 @@ const subtract = function(num1,num2) {
 };
 
 const sum = function(array) {
-	let s = 0;
-  for(let i = 0;i < array.length;i++){
-    s += array[i];
-  }
+	// let s = 0;
+  // for(let i = 0;i < array.length;i++){
+  //   s += array[i];
+  // }
+  // return s;
+  let s = array.reduce((sum,current) => sum + current,0);
   return s;
 };
 
 const multiply = function(array) {
-  let product = 1;
-  for(let i = 0;i<array.length;i++){
-    product *= array[i];
-  }
+  // let product = 1;
+  // for(let i = 0;i<array.length;i++){
+  //   product *= array[i];
+  // }
 
-  return product;
+  // return product;
 };
 
 const power = function(num1,num2) {
