@@ -23,6 +23,8 @@ const multiply = function(array) {
   // }
 
   // return product;
+  let pro = array.reduce((product,current) => product * current,1);
+  return pro;
 };
 
 const power = function(num1,num2) {
